@@ -1,0 +1,1 @@
+// TODO: write code to render a single pose that accepts props from Poses (this is a "dumb" component; no logic lives here)
