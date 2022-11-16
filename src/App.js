@@ -1,11 +1,10 @@
 import './App.css';
+import { Poses } from './Poses'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-      <h1>Yoga2Go</h1>
-      </header>
+      <Poses />
     </div>
   );
 }
