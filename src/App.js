@@ -1,10 +1,18 @@
-import './App.css';
-import { Poses } from './Poses'
+// TODO: Add React Router
+
+import './styles/App.css';
+import { Navbar } from './Components/Navbar';
+import { Poses } from './Components/Poses';
+import { PosesList } from './Components/PosesList';
+import { About } from './Components/About';
 
 function App() {
   return (
     <div className="App">
-      <Poses />
+      {/* <Navbar /> */}
+      {/* <Poses /> */}
+      {/* <PosesList /> */}
+      {/* <About /> */}
     </div>
   );
 }
