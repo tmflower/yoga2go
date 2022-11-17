@@ -8,9 +8,10 @@ import { useState, useEffect } from "react";
 export function PosesList() {
 
     const [allPoses, setAllPoses] = useState([]);
+    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
-        async function getPose() {
+        async function getAllPoses() {
             const res = await axios.get("https://lightning-yoga-api.herokuapp.com/yoga_poses")
             .then((res) => {
                 setAllPoses(res.data.items);
@@ -19,14 +20,27 @@ export function PosesList() {
                 console.error(error)
             })           
         }
-        getPose()
+        getAllPoses()
+    }, []);
+
+    useEffect(() => {
+        async function getCategories() {
+            const res = await axios.get("https://lightning-yoga-api.herokuapp.com/yoga_categories")
+            .then((res) => {
+                setCategories(res.data.items);
+            })
+            .catch((error) => {
+                console.error(error)
+            })           
+        }
+        getCategories()
     }, []);
 
     return (
         <>
         <h1>Choose a Pose</h1>
         {allPoses ? 
-        allPoses.map((pose, i) => <p key={i}>{pose.sanskrit_name}</p>)            
+        categories.map((category, i) => <p key={i}>{category.name}: {category.description}</p>)            
         : "Loading..."}
         </>
     )
