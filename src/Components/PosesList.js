@@ -4,11 +4,11 @@
 
 import axios from "axios";
 import { useState, useEffect } from "react";
+import { Pose } from "./Pose";
 
 export function PosesList() {
 
     const [allPoses, setAllPoses] = useState([]);
-    const [categories, setCategories] = useState([]);
 
     useEffect(() => {
         async function getAllPoses() {
@@ -23,24 +23,15 @@ export function PosesList() {
         getAllPoses()
     }, []);
 
-    useEffect(() => {
-        async function getCategories() {
-            const res = await axios.get("https://lightning-yoga-api.herokuapp.com/yoga_categories")
-            .then((res) => {
-                setCategories(res.data.items);
-            })
-            .catch((error) => {
-                console.error(error)
-            })           
-        }
-        getCategories()
-    }, []);
+
+console.log(allPoses)
 
     return (
         <>
         <h1>Choose a Pose</h1>
         {allPoses ? 
-        categories.map((category, i) => <p key={i}>{category.name}: {category.description}</p>)            
+        // allPoses.map((pose) => <Pose key={pose.id} sanskritName={pose.sanskrit_name} englishName={pose.english_name} diagram={pose.img_url}/>)
+        allPoses.map((pose) => <p key={pose.id}>{pose.sanskrit_name}</p>)            
         : "Loading..."}
         </>
     )
