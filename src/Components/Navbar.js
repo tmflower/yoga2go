@@ -5,8 +5,7 @@ export function Navbar() {
     return (
         <>
             <NavLink exact="true" to="/" end>Home</NavLink>
-            <NavLink exact="true" to="/poses" end>Poses</NavLink>
-            <NavLink exact="true" to="/categories" end>Categories</NavLink>
+            <NavLink exact="true" to="/explore" end>Explore</NavLink>
             <NavLink exact="true" to="/about" end>About</NavLink>
         </>        
     )

@@ -1,6 +1,6 @@
 // TODO: Each category needs to be clickable and reveal the poses in that category
 
-
+import "../styles/CategoriesList.css";
 import { Category } from "./Category";
 import axios from "axios";
 import { useState, useEffect} from "react";
@@ -22,19 +22,12 @@ export function CategoriesList() {
         }
         getCategories()
     }, []);
-
-    // const filteredCategories = categories.map((category) => {
-	// 	return category.filter((cat) => {
-	// 		return cat.id === id;
-	// 	});
-	// });
     
     return (
         <>
         <h1>Choose a Category</h1>
         {categories ? 
-        categories.map((category) => <Category key={category.id} name={category.name} description={category.description} id={category.id}/>)
-        // categories.map((category, i) => <p key={i}>{category.name}: {category.description}</p>)            
+        categories.map((category) => <NavLink to={`/categories/${category.name}`} key={category.id}><Category key={category.id} name={category.name} description={category.description} id={category.id}/></NavLink>)           
         : "Loading..."}
         </>
     )

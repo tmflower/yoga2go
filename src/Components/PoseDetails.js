@@ -1,16 +1,20 @@
+// TODO: Add function to request YouTube video
+
+import "../styles/Pose.css";
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Pose } from "./Pose";
+import { useParams } from "react-router-dom";
 
 
-export function SelectedPose({id}) {
+export function PoseDetails() {
+    const {pose_id} = useParams();
 
     const [pose, setPose] = useState(null);
 
     useEffect(() => {
-        async function getPose() {
-            // const res = await axios.get(`https://lightning-yoga-api.herokuapp.com/yoga_poses/33`)
-            const res = await axios.get(`https://lightning-yoga-api.herokuapp.com/yoga_poses/:${id}`)
+        async function getPoseById() {
+            const res = await axios.get(`https://lightning-yoga-api.herokuapp.com/yoga_poses/${pose_id}`)
             .then((res) => {
                 setPose(res.data);
             })
@@ -18,7 +22,7 @@ export function SelectedPose({id}) {
                 console.error(error)
             })           
         }
-        getPose()
+        getPoseById()
     }, []);
 
     return (
