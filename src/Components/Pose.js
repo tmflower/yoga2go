@@ -1,11 +1,10 @@
 // TODO: add video
+import "../styles/Pose.css";
 
 export function Pose({sanskritName, englishName, diagram, video}) {
     return (
         <>
-            <h1>Yoga2Go</h1>
-            <p>Welcome to your daily dose of yoga! Today's pose is <em>{sanskritName}</em></p>
-            <p>This commonly referred to as {englishName} pose in English.</p>
+            <p>This pose is <em>{sanskritName}</em>, commonly referred to as {englishName} pose.</p>
             <img src={diagram} style={{width: "400px"}}></img>
         </>
     )
