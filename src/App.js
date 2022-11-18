@@ -6,6 +6,7 @@ import { Home } from './Components/Home';
 import { CategoriesList } from './Components/CategoriesList';
 import { CategoryDetails } from './Components/CategoryDetails';
 import { PoseDetails } from './Components/PoseDetails';
+import { Dev } from './Components/Dev';
 
 function App() {
 
@@ -18,6 +19,7 @@ function App() {
           <Route path="categories/:category_name" element={<CategoryDetails />}></Route>
           <Route path="/poses/:pose_id" element={<PoseDetails />}></Route>
           <Route path="/about" element={<About />}></Route>
+          <Route path="/dev" element={<Dev />}></Route>
         </Routes>
     </div>
   );
