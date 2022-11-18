@@ -7,6 +7,6 @@ export function Navbar() {
             <NavLink exact="true" to="/" end>Home</NavLink>
             <NavLink exact="true" to="/explore" end>Explore</NavLink>
             <NavLink exact="true" to="/about" end>About</NavLink>
-        </>        
+        </>
     )
 }
