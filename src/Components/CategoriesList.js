@@ -25,19 +25,22 @@ export function CategoriesList() {
 
   return (
     <>
-      <h1 className="category-header">Choose a Category</h1>
-      {categories
-        ? categories.map((category) => (
-            <NavLink to={`/categories/${category.name}`} key={category.id}>
-              <Category
-                key={category.id}
-                name={category.name}
-                description={category.description}
-                id={category.id}
-              />
-            </NavLink>
-          ))
-        : "Loading..."}
+      <h1 className="category-header">Browse Poses By Type</h1>
+      <hr className="title-divider" />
+      <div className="category-page">
+        {categories
+          ? categories.map((category) => (
+              <NavLink to={`/categories/${category.name}`} key={category.id}>
+                <Category
+                  key={category.id}
+                  name={category.name}
+                  description={category.description}
+                  id={category.id}
+                />
+              </NavLink>
+            ))
+          : "Loading..."}
+      </div>
     </>
   );
 }
