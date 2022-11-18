@@ -24,10 +24,12 @@ p {
 }
 
 .placeholder {
-  background-color: #c1895d;
-  padding: 100px 150px;
   margin: 10px;
-  border-radius: 2px;
+}
+
+.images {
+  height: 400px;
+  border-radius: 3px;
 }
 
 .container {

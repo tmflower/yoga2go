@@ -18,11 +18,11 @@ a:hover {
 }
 
 .category-page {
-  width: 75%;
+  width: 975px;
   border-radius: 10px;
   display: block;
   margin: 0 auto;
-  background-color: #96afb8;
+  background-color: rgb(150, 175, 184, 0.6);
   padding-top: 20px;
   margin-top: 40px;
   padding-bottom: 20px;
@@ -30,7 +30,7 @@ a:hover {
 }
 
 .title-divider {
-  width: 60%;
+  width: 700px;
   display: block;
   margin: 0 auto;
 }
