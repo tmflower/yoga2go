@@ -3,8 +3,9 @@
 A wellness app designed to encourage daily yoga practice by providing users new (and familiar) poses to try, including video demonstrations.
 
 Built using:
+Figma
 React.js
-CSS
+CSS / Bootstrap
 Yoga API (?)
 YouTube API
 
@@ -15,6 +16,9 @@ Sarah Allen
 Heather Stout Svanidze
 Elizabeth King
 Kris Jackson
+Kate Baker
+Valentina Provida
+
 
 Aspects we're proud of:
 
@@ -22,5 +26,6 @@ Aspects we're proud of:
 Lessons Learned:
 
 
-  
+
+
 
