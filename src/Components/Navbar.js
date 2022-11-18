@@ -16,9 +16,7 @@ export function Navbar() {
                 <li className="nav-item">
                 <NavLink exact="true" to="/about" className="nav-links">About</NavLink>
                 </li>
-            </ul>
-            
-            </div>            
+            </ul>           
         </nav>
     )
 }
