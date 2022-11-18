@@ -1,0 +1,36 @@
+body {
+  background: #e6f4f1;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: black;
+}
+
+.category-header {
+  font-family: "Playfair Display";
+  font-size: 64px;
+  text-align: center;
+}
+
+.category-page {
+  width: 75%;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+  background-color: #96afb8;
+  padding-top: 20px;
+  margin-top: 40px;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.title-divider {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}

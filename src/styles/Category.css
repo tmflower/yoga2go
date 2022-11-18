@@ -1,0 +1,46 @@
+a {
+  color: #000;
+}
+
+h1 {
+  padding: 40px;
+}
+
+p {
+  text-align: center;
+  padding-top: 20px;
+}
+
+.category-titles {
+  font-size: 32px;
+  font-family: "Playfair Display";
+  text-align: center;
+  color: #000;
+}
+
+.category-description {
+  font-family: "Work Sans";
+  color: #000;
+}
+
+.placeholder {
+  background-color: #c1895d;
+  padding: 100px 150px;
+  margin: 10px;
+  border-radius: 2px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-around;
+}
+
+.box-container {
+  padding: 20px;
+}
+
+.divider {
+  width: 60%;
+  display: block;
+  margin: 0 auto;
+}
