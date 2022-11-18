@@ -22,6 +22,5 @@ Aspects we're proud of:
 Lessons Learned:
 
 
-
-(TODO: complete this document!)
+  
 
