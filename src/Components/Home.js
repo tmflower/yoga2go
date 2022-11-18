@@ -3,6 +3,7 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Pose } from "./Pose";
+import background from "./Images/background.png";
 
 
 export function Home() {
@@ -24,12 +25,12 @@ export function Home() {
     }, [randomNum]);
 
     return (
-        <>
+        <div style={{ backgroundImage: `url(${background})`}}>
         <h1>Yoga2Go</h1>
         <h3>Welcome to your source for a daily dose of yoga! Here is your pose of the day:</h3>
         {pose ? 
         <Pose sanskritName={pose.sanskrit_name} englishName={pose.english_name} diagram={pose.img_url}/>    
         : "Loading..."}
-        </>
+        </div>
     )
 }
