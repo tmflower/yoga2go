@@ -23,9 +23,12 @@ export function Home() {
   }, [randomNum]);
 
   return (
-    <>
-      <h1>Daily Yoga Pose</h1>
-      <h3>Welcome to your source for a daily dose of yoga!</h3>
+    <div style={{ backgroundImage: `url(${background})` }}>
+      <h1>Yoga2Go</h1>
+      <h3>
+        Welcome to your source for a daily dose of yoga! Here is your pose of
+        the day:
+      </h3>
       {pose ? (
         <Pose
           sanskritName={pose.sanskrit_name}
@@ -35,6 +38,6 @@ export function Home() {
       ) : (
         "Loading..."
       )}
-    </>
+    </div>
   );
 }

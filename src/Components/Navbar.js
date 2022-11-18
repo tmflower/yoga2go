@@ -1,18 +1,29 @@
-// TODO: Build Navbar component with NavLinks for each route
 import { NavLink } from "react-router-dom";
+import "./NavBar.css";
 
 export function Navbar() {
   return (
-    <>
-      <NavLink exact="true" to="/" end>
-        Home
+    <nav className="navbar">
+      <NavLink exact="true" to="/" className="nav-logo">
+        Yoga2Go
       </NavLink>
-      <NavLink exact="true" to="/explore" end>
-        Explore
-      </NavLink>
-      <NavLink exact="true" to="/about" end>
-        About
-      </NavLink>
-    </>
+      <ul className="nav-menu">
+        <li className="nav-item">
+          <NavLink exact="true" to="/" className="nav-links">
+            Home
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink exact="true" to="/explore" className="nav-links">
+            Explore
+          </NavLink>
+        </li>
+        <li className="nav-item">
+          <NavLink exact="true" to="/about" className="nav-links">
+            About
+          </NavLink>
+        </li>
+      </ul>
+    </nav>
   );
 }
