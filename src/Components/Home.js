@@ -4,6 +4,8 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Pose } from "./Pose";
 
+import background from "./Images/background.png";
+
 export function Home() {
   const [pose, setPose] = useState(null);
   const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 47));
