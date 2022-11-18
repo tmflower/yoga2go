@@ -3,8 +3,9 @@
 import axios from "axios";
 import { useState, useEffect } from "react";
 import { Pose } from "./Pose";
-
+import "../styles/Home.css";
 import background from "./Images/background.png";
+import lotus from "./Images/lotus-flower.png";
 
 export function Home() {
   const [pose, setPose] = useState(null);
@@ -26,11 +27,8 @@ export function Home() {
 
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
-      <h1>Yoga2Go</h1>
-      <h3>
-        Welcome to your source for a daily dose of yoga! Here is your pose of
-        the day:
-      </h3>
+      <h2>Welcome to your source for a daily dose of yoga</h2>
+      <img src={lotus} className="lotus" />
       {pose ? (
         <Pose
           sanskritName={pose.sanskrit_name}
