@@ -12,6 +12,7 @@
 - Figma
 - Adobe XD
 
+
 **Contributors:**
 - Khalina Boyce
 - Tina Flower
@@ -21,6 +22,8 @@
 - Kris Jackson
 - Kate Baker
 - Valentina Provida
+
+
 
 
 **Aspects we're proud of:**
