@@ -33,7 +33,7 @@ export function Home() {
     getPose();
   }, []);
 
-  console.log(poseName);
+  // console.log(poseName);
 
 //   useEffect(() => {
 //     async function getVideo() {
@@ -62,7 +62,6 @@ export function Home() {
             sanskritName={pose.sanskrit_name}
             englishName={pose.english_name}
             diagram={pose.img_url}
-            video={video}
           />)}
         </span>)
        : (

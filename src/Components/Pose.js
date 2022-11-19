@@ -14,6 +14,7 @@ export function Pose({ sanskritName, englishName, diagram, video }) {
           <div className="pose-info">{englishName} Pose</div>
         </p>{" "}
         <img src={diagram} alt="Yoga pose example" className="pose-icon"></img>
+        {video ? 
         <div>
           <iframe   className="pose-video"
                     width="500" 
@@ -25,7 +26,7 @@ export function Pose({ sanskritName, englishName, diagram, video }) {
                     allowFullScreen>
           </iframe>
         </div>
-
+        : null}
       </div>
     </>
   );
