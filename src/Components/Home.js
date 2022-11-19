@@ -27,7 +27,7 @@ export function Home() {
 
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
-      <h1>Welcome to your source for your daily dose of yoga!</h1>{" "}
+      <h1>Welcome to your source for a daily dose of yoga!</h1>{" "}
       <h3>Daily Yoga Pose</h3>
       {pose ? (
         <Pose

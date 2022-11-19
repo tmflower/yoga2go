@@ -1,3 +1,24 @@
+@media (max-width: 920px) {
+  .pose-icon {
+    height: 275px !important;
+    padding-top: 20px !important;
+  }
+
+  .pose-info {
+    width: 375px !important;
+  }
+}
+
+@media (max-width: 750px) {
+  .pose-info {
+    width: 350px !important;
+  }
+
+  .pose-icon {
+    padding-top: 10px !important;
+  }
+}
+
 .pose-info {
   font-size: 24px;
   font-family: "Work Sans";
@@ -10,13 +31,6 @@
 
 .pose-icon {
   height: 330px;
-  padding-right: 200px;
-}
-
-.yoga-pose {
-  display: flex;
-  justify-content: space-between;
-  padding-left: 0;
 }
 
 .sanskrit-pose {

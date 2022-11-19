@@ -1,3 +1,25 @@
+@media (max-width: 920px) {
+  .images {
+    height: 300px !important;
+  }
+
+  .box-container {
+    padding: 0 !important;
+  }
+}
+
+@media (max-width: 800px) {
+  .container {
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 620px) {
+  .images {
+    height: 200px !important;
+  }
+}
+
 a {
   color: #000;
 }
