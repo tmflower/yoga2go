@@ -1,0 +1,52 @@
+body {
+  text-align: center;
+}
+
+h1 {
+  text-align: left;
+  font-family: "Playfair Display";
+  font-size: 20px;
+  margin: 0 auto;
+}
+
+h3 {
+  font-size: 84px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 38px;
+  font-family: "Playfair Display";
+  text-align: left;
+  background-color: rgb(51, 74, 82, 0.8);
+  color: #c1895d;
+  width: 700px;
+  border-radius: 1px;
+}
+
+.divide {
+  width: 60%;
+  display: block;
+  margin: 20px auto;
+}
+
+.extra-links {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 40px;
+  margin-top: 40px;
+}
+
+.explore-link {
+  padding: 80px;
+  background-color: rgb(150, 175, 184, 0.5);
+  font-size: 32px;
+  text-transform: capitalize;
+  font-family: "Work Sans";
+}
+
+.about-link {
+  padding: 80px;
+  background-color: rgb(150, 175, 184, 0.5);
+  font-size: 32px;
+  text-transform: capitalize;
+  font-family: "Work Sans";
+}
