@@ -1,16 +1,21 @@
 import defaultForBio from "../Components/Images/defaultForBio.jpg";
 import "../styles/Dev.css";
 
-export function Dev({
-  name,
-  bio,
-  photo = defaultForBio,
-  link = "https://unsplash.com/photos/klH-f7mw2Ws?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink",
-}) {
-  return (
-    <div className="bio-profile">
-      <div>
-        <img src={photo} width="200"></img>
+
+export function Dev({ 
+    name, 
+    bio, 
+    photo, 
+    link, }) {
+    return (
+        <div className="bio-profile">
+            
+            <div>
+                <img src={photo} width="200"></img>  
+                
+                <p className="bio-name">{name}</p>
+                             
+                <p className="bio-text">{bio}</p>
 
         <p className="bio-name">{name}</p>
 
