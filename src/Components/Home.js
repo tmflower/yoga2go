@@ -13,6 +13,7 @@ export function Home() {
   const [matchingNum, setMatchingNum] = useState(randomNum);
   const [poseName, setPoseName] = useState(null);
   const [video, setVideo] = useState(null);
+  
 
 
   useEffect(() => {
