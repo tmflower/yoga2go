@@ -5,7 +5,7 @@ import { useState, useEffect } from "react";
 import { Pose } from "./Pose";
 import "../styles/Home.css";
 import background from "./Images/background.png";
-import lotus from "./Images/lotus-flower.png";
+import { NavLink } from "react-router-dom";
 
 export function Home() {
   const [pose, setPose] = useState(null);
@@ -27,8 +27,8 @@ export function Home() {
 
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
-      <h2>Welcome to your source for a daily dose of yoga</h2>
-      <img src={lotus} className="lotus" />
+      <h1>Welcome to your source for your daily dose of yoga!</h1>{" "}
+      <h3>Daily Yoga Pose</h3>
       {pose ? (
         <Pose
           sanskritName={pose.sanskrit_name}
@@ -38,6 +38,15 @@ export function Home() {
       ) : (
         "Loading..."
       )}
+      <hr className="divide" />
+      <div className="extra-links">
+        <NavLink exact="true" to="/explore" className="explore-link">
+          Explore more poses
+        </NavLink>
+        <NavLink exact="true" to="/about" className="about-link">
+          About the creators
+        </NavLink>
+      </div>
     </div>
   );
 }
