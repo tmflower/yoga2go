@@ -1,3 +1,45 @@
+@media (max-width: 920px) {
+  h3 {
+    font-size: 72px !important;
+    width: 600px !important;
+  }
+}
+
+@media (max-width: 620px) {
+  h1 {
+    text-align: center !important;
+    font-size: 16px !important;
+  }
+
+  h3 {
+    text-align: center !important;
+    font-size: 40px !important;
+    padding-left: 0 !important;
+    width: 100% !important;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .divide {
+    width: 350px !important;
+  }
+
+  .extra-links {
+    flex-direction: column;
+  }
+
+  .explore-link {
+    font-size: 24px !important;
+    padding: 35px !important;
+    margin-bottom: 20px !important;
+  }
+
+  .about-link {
+    font-size: 24px !important;
+    padding: 35px !important;
+  }
+}
+
 body {
   text-align: center;
 }
