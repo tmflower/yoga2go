@@ -1,11 +1,11 @@
 .navbar {
-  background-color: #ffffff;
+  background-color: #f2f2f2;
   height: 80px;
   display: inline-flex;
   width: 100%;
   font-size: 1.2rem;
   top: 0;
-  z-index: 20;   
+  z-index: 20;
 }
 
 .nav-logo {
@@ -28,7 +28,6 @@
   text-decoration: none;
   padding: 0.5rem 1rem;
   height: 100%;
-  
 }
 
 .fa-code {
@@ -39,6 +38,8 @@
   line-height: 40px;
   margin-right: 1rem;
   padding-bottom: 1rem;
+  font-family: "Work Sans";
+  font-weight: 500;
 }
 
 .nav-item:after {
@@ -62,47 +63,46 @@
 
 @media screen and (max-width: 960px) {
   .nav-menu {
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      border-top: 1pxsolid #ffffff;
-      position: absolute;
-      top: 80px;
-      left: -110%;
-      opacity: 1;
-      transition: all 0.5s ease;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    border-top: 1pxsolid #ffffff;
+    position: absolute;
+    top: 80px;
+    left: -110%;
+    opacity: 1;
+    transition: all 0.5s ease;
   }
 
   .nav-menu.active {
-      background: #334a52;
-      padding: 1rem;
-      left: 0px;
-      opacity: 1;
-      transition: all 0.5s ease;
-      z-index: 1;
+    background: #334a52;
+    padding: 1rem;
+    left: 0px;
+    opacity: 1;
+    transition: all 0.5s ease;
+    z-index: 1;
   }
 
   .nav-item .active {
-      color: #f1f1f1;
-      border: none;
+    color: #f1f1f1;
+    border: none;
   }
 
   .nav-links {
-      padding: 1rem;
-      width: 100%;
-      display: table;
-      color: #ffffff;
+    padding: 1rem;
+    width: 100%;
+    display: table;
+    color: #ffffff;
   }
 
   .nav-icon {
-      display: block;
-      position: absolute;
-      top: 0;
-      right: 0;
-      transform: translate(-100%, 60%);
-      font-size: 1.5rem;
-      cursor: pointer;
-      color: #707070;
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(-100%, 60%);
+    font-size: 1.5rem;
+    cursor: pointer;
+    color: #707070;
   }
-
 }
