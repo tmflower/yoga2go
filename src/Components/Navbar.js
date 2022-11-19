@@ -10,7 +10,7 @@ export function Navbar() {
     return (
       <>
       <nav className="navbar">
-          <NavLink exact="true" to="/" activeClassName="active" className="nav-logo"><img class="resize" src={logo} alt="logo"></img></NavLink>
+          <NavLink exact="true" to="/" className="nav-logo"><img src={logo} alt="logo"></img></NavLink>
 
           <ul className={click ? "nav-menu active" : "nav-menu"}>
               <li className="nav-item">
