@@ -1,13 +1,12 @@
 .navbar {
   background-color: #ffffff;
   height: 80px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  display: inline-flex;
+  width: 100%;
   font-size: 1.2rem;
-  position: sticky;
   top: 0;
   z-index: 20;
+  padding-bottom: 6%;
 }
 
 .nav-container {
@@ -20,13 +19,10 @@
 }
 
 .nav-logo {
-  color: #334a52;
   align-items: center;
   margin-left: 20px;
   cursor: pointer;
   text-decoration: none;
-  font-size: 2rem;
-  flex-grow: 1;
 }
 
 .nav-menu {
@@ -44,9 +40,14 @@
   border-bottom: 3px solid transparent;
 }
 
+.fa-code {
+  margin-left: 1rem;
+}
+
 .nav-item {
   line-height: 40px;
   margin-right: 1rem;
+  padding-top: 1rem;
 }
 
 .nav-item:after {
@@ -58,8 +59,59 @@
   transition: width 0.7s ease, background-color 0.5s ease;
 }
 
-.nav-item:hover {
+.nav-item:hover:after {
   width: 100%;
   height: 3px;
   background: #96afb8;
+}
+
+.nav-icon {
+  display: none;
+}
+
+@media screen and (max-width: 960px) {
+  .nav-menu {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      border-top: 1pxsolid #ffffff;
+      position: absolute;
+      bottom: 80px;
+      left: -110%;
+      opacity: 1;
+      transition: all 0.5s ease;
+  }
+
+  .nav-menu.active {
+      background: #334a52;
+      padding: 1rem;
+      left: 0px;
+      opacity: 1;
+      transition: all 0.5s ease;
+      z-index: 1;
+  }
+
+  .nav-item .active {
+      color: #f1f1f1;
+      border: none;
+  }
+
+  .nav-links {
+      padding: 1rem;
+      width: 100%;
+      display: table;
+      color: #ffffff;
+  }
+
+  .nav-icon {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+      transform: translate(-100%, 60%);
+      font-size: 1.5rem;
+      cursor: pointer;
+      color: #707070;
+  }
+
 }
