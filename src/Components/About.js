@@ -7,6 +7,7 @@ import sarahpic from './Images/sarahpic.jpeg';
 import Valentinapic from './Images/Valentinapic.jpeg';
 
 export function About() {
+
     return (
         <div>
             <h1>Meet the Yoga2Go Developers</h1>
@@ -21,3 +22,4 @@ export function About() {
         </div>
     )
 }
+

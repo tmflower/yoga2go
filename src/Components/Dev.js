@@ -1,6 +1,7 @@
 import defaultForBio from "../Components/Images/defaultForBio.jpg";
 import "../styles/Dev.css";
 
+
 export function Dev({ 
     name, 
     bio, 
@@ -16,8 +17,14 @@ export function Dev({
                              
                 <p className="bio-text">{bio}</p>
 
-                <a href={link} target="_blank"><button className="connect-btn">Connect with Me!</button> </a> 
-            </div>                     
-        </div>
-    )
+        <p className="bio-name">{name}</p>
+
+        <p className="bio-text">{bio}</p>
+
+        <a href={link} target="_blank">
+          <button className="connect-btn">Connect with Me!</button>{" "}
+        </a>
+      </div>
+    </div>
+  );
 }
