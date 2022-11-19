@@ -12,6 +12,7 @@
 - Figma
 - Adobe XD
 
+
 **Contributors:**
 - Khalina Boyce
 - Tina Flower
@@ -21,6 +22,8 @@
 - Kris Jackson
 - Kate Baker
 - Valentina Provida
+
+
 
 
 **Aspects we're proud of:**
@@ -35,7 +38,7 @@ It can be easy to get carried away in a thought or an idea. Having a strong lead
 
 It is not a requirement to know everything about programming to start or join a project. Start where you are. 
 
-![Yoga2Go Logo](src/Components/Images/Yoga2Go.png)
+![Yoga2Go Logo](src/Components/Images/Yoga2Go-small.png)
 
 
 
