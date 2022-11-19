@@ -1,14 +1,14 @@
 h1 {
-    font-family: "Playfair Display";
-    font-size: 64px;
-    text-align: center;
-    margin:auto;
-    color:#334A52;
+  font-family: "Playfair Display";
+  font-size: 64px;
+  text-align: center;
+  margin: 0 auto;
+  color: #334a52;
 }
 
 .bio-container {
-    display:flex;
-    flex-flow:row wrap;
-    width:75%;
-    margin:auto;
+  display: flex;
+  flex-flow: row wrap;
+  width: 75%;
+  margin: auto;
 }
