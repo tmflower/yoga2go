@@ -10,6 +10,11 @@ import { NavLink } from "react-router-dom";
 export function Home() {
   const [pose, setPose] = useState(null);
   const [randomNum, setRandomNum] = useState(Math.floor(Math.random() * 47));
+  const [matchingNum, setMatchingNum] = useState(randomNum);
+  const [poseName, setPoseName] = useState(null);
+  const [video, setVideo] = useState(null);
+
+  const KEY="AIzaSyDy-5ptEOnMtvDUI_GyZPe5sdsE3QKxPCk"
 
   useEffect(() => {
     async function getPose() {
@@ -17,6 +22,7 @@ export function Home() {
         .get("https://lightning-yoga-api.herokuapp.com/yoga_poses")
         .then((res) => {
           setPose(res.data.items[randomNum]);
+          setPoseName(res.data.items[matchingNum].sanskrit_name);
         })
         .catch((error) => {
           console.error(error);
@@ -25,17 +31,31 @@ export function Home() {
     getPose();
   }, [randomNum]);
 
+  useEffect(() => {
+    async function getVideo() {
+        const res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${poseName}&maxResults=1&key=${KEY}`)
+        .then((res) => {
+                setVideo(res.data.items[0].id.videoId)             
+        })
+        .catch((error) => {
+            console.error(error)
+        })           
+    }
+    getVideo()
+}, [poseName]);
+
   return (
     <div style={{ backgroundImage: `url(${background})` }}>
       <h1>Welcome to your source for your daily dose of yoga!</h1>{" "}
       <h3>Daily Yoga Pose</h3>
-      {pose ? (
+      {pose ? 
         <Pose
           sanskritName={pose.sanskrit_name}
           englishName={pose.english_name}
           diagram={pose.img_url}
+          video={video}
         />
-      ) : (
+       : (
         "Loading..."
       )}
       <hr className="divide" />
