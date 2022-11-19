@@ -3,10 +3,10 @@ import "../styles/About.css";
 
 export function About() {
     return (
-        <div>
+        <div className="bio-container">
             <h1>Meet the Yoga2Go Developers</h1>
             <Dev name="Elizabeth King"/>
-            <Dev name="Heather Stout Svanidze"/>
+            <Dev name="Heather Stout"/>
             <Dev name="Kate Baker"/>
             <Dev name="Khalina Boyce"/>
             <Dev name="Kris Jackson"/>

@@ -2,28 +2,33 @@
 
 A wellness app designed to encourage daily yoga practice by providing users new (and familiar) poses to try, including video demonstrations.
 
-Built using:
+## Built using:
 Figma
 React.js
 CSS / Bootstrap
-Yoga API (?)
+Lightning Yoga API 
 YouTube API
 
-Contributors:
+## Contributors:
 Khalina Boyce
-Tina Flower
+Tina Flower - Project management and React functionality
 Sarah Allen
 Heather Stout Svanidze
 Elizabeth King
 Kris Jackson
 Kate Baker
-Valentina Provida
+Valentina Provida - APIs
 
 
-Aspects we're proud of:
+## Aspects we're proud of:
 
 
-Lessons Learned:
+## Lessons Learned:
+
+
+## Attributions:
+
+
 
 
 
