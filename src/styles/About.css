@@ -1,3 +1,9 @@
+@media (max-width: 850px) {
+  h1 {
+    font-size: 52px !important;
+  }
+}
+
 h1 {
   font-family: "Playfair Display";
   font-size: 64px;
@@ -9,6 +15,5 @@ h1 {
 .bio-container {
   display: flex;
   flex-flow: row wrap;
-  width: 75%;
-  margin: auto;
+  margin: 20px;
 }
