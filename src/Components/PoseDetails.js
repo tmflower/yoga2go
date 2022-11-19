@@ -13,7 +13,7 @@ export function PoseDetails() {
     const [poseName, setPoseName] = useState(null);
     const [video, setVideo] = useState(null);
     
-    const KEY="AIzaSyDy-5ptEOnMtvDUI_GyZPe5sdsE3QKxPCk"
+    // const KEY=
 
     useEffect(() => {
         async function getPoseById() {
