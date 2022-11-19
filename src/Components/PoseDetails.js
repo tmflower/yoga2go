@@ -5,7 +5,6 @@ import axios from "axios";
 import { useState, useEffect } from "react";
 import { Pose } from "./Pose";
 import { useParams } from "react-router-dom";
-import apiKey from "../key";
 
 
 export function PoseDetails() {
@@ -14,7 +13,6 @@ export function PoseDetails() {
     const [pose, setPose] = useState(null);
     const [poseName, setPoseName] = useState(null);
     const [video, setVideo] = useState(null);
-    const KEY=apiKey;
 
     useEffect(() => {
         async function getPoseById() {
