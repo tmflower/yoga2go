@@ -69,7 +69,6 @@ h3 {
   background-color: rgb(51, 74, 82, 0.8);
   color: #c1895d;
   width: 100%;
-  border-radius: 1px;
 }
 
 .divide {
@@ -86,12 +85,13 @@ h3 {
 }
 
 .explore-link {
-  padding: 80px;
+  padding: 60px;
   background-color: rgb(150, 175, 184, 0.5);
   font-size: 32px;
   text-transform: capitalize;
   font-family: "Work Sans";
   transition: ease-out 800ms;
+  border-radius: 2px;
 }
 
 .explore-link:hover {
@@ -99,12 +99,13 @@ h3 {
 }
 
 .about-link {
-  padding: 80px;
+  padding: 60px;
   background-color: rgb(150, 175, 184, 0.5);
   font-size: 32px;
   text-transform: capitalize;
   font-family: "Work Sans";
   transition: ease-out 800ms;
+  border-radius: 2px;
 }
 
 .about-link:hover {
