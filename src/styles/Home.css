@@ -15,7 +15,7 @@
 }
 
 @media (max-width: 750px) {
-  h1 {
+  .welcome {
     font-size: 20px !important;
   }
 
@@ -51,11 +51,12 @@ body {
   text-align: center;
 }
 
-h1 {
+.welcome {
   text-align: center;
   font-family: "Playfair Display";
   font-size: 20px;
   margin: 0 auto;
+  color: #000;
 }
 
 h3 {
@@ -90,6 +91,11 @@ h3 {
   font-size: 32px;
   text-transform: capitalize;
   font-family: "Work Sans";
+  transition: ease-out 800ms;
+}
+
+.explore-link:hover {
+  font-size: 36px;
 }
 
 .about-link {
@@ -98,4 +104,9 @@ h3 {
   font-size: 32px;
   text-transform: capitalize;
   font-family: "Work Sans";
+  transition: ease-out 800ms;
+}
+
+.about-link:hover {
+  font-size: 36px;
 }
