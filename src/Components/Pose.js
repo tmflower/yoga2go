@@ -13,7 +13,7 @@ export function Pose({ sanskritName, englishName, diagram, video }) {
           commonly referred to as{" "}
           <div className="pose-name">{englishName} Pose</div>
         </p>{" "}
-        <img src={diagram} className="pose-icon"></img>
+        <img src={diagram} alt="Yoga pose example" className="pose-icon"></img>
       </div>
     </>
   );
