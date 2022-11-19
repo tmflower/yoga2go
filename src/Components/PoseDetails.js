@@ -8,9 +8,12 @@ import { useParams } from "react-router-dom";
 
 
 export function PoseDetails() {
+    
     const {pose_id} = useParams();
-
     const [pose, setPose] = useState(null);
+    const [poseName, setPoseName] = useState(null);
+    const [video, setVideo] = useState(null);
+    const KEY="AIzaSyDy-5ptEOnMtvDUI_GyZPe5sdsE3QKxPCk";
 
     useEffect(() => {
         async function getPoseById() {

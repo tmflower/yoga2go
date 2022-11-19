@@ -14,7 +14,7 @@ export function Home() {
   const [poseName, setPoseName] = useState(null);
   const [video, setVideo] = useState(null);
 
-  const KEY="AIzaSyDy-5ptEOnMtvDUI_GyZPe5sdsE3QKxPCk"
+  const KEY="AIzaSyDy-5ptEOnMtvDUI_GyZPe5sdsE3QKxPCk";
 
   useEffect(() => {
     async function getPose() {
@@ -35,7 +35,7 @@ export function Home() {
     async function getVideo() {
         const res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${poseName}&maxResults=1&key=${KEY}`)
         .then((res) => {
-                setVideo(res.data.items[0].id.videoId)             
+                setVideo(res.data.items[0].id.videoId);         
         })
         .catch((error) => {
             console.error(error)
@@ -48,13 +48,17 @@ export function Home() {
     <div style={{ backgroundImage: `url(${background})` }}>
       <h1>Welcome to your source for your daily dose of yoga!</h1>{" "}
       <h3>Daily Yoga Pose</h3>
-      {pose ? 
-        <Pose
-          sanskritName={pose.sanskrit_name}
-          englishName={pose.english_name}
-          diagram={pose.img_url}
-          video={video}
-        />
+      {pose ? (
+        <span>
+          {poseName === null ? "Loading..." :
+          (
+          <Pose
+            sanskritName={pose.sanskrit_name}
+            englishName={pose.english_name}
+            diagram={pose.img_url}
+            video={video}
+          />)}
+        </span>)
        : (
         "Loading..."
       )}
