@@ -6,6 +6,7 @@ import { Pose } from "./Pose";
 import "../styles/Home.css";
 import background from "./Images/background.png";
 import { NavLink } from "react-router-dom";
+import apiKey from "../key";
 
 export function Home() {
   const [pose, setPose] = useState(null);
@@ -14,7 +15,7 @@ export function Home() {
   const [poseName, setPoseName] = useState(null);
   const [video, setVideo] = useState(null);
 
-  const KEY="AIzaSyDy-5ptEOnMtvDUI_GyZPe5sdsE3QKxPCk";
+  const KEY=apiKey;
 
   useEffect(() => {
     async function getPose() {
