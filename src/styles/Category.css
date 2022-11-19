@@ -38,6 +38,11 @@ p {
   font-family: "Playfair Display";
   text-align: center;
   color: #000;
+  transition: ease-out 800ms;
+}
+
+.category-titles:hover {
+  font-size: 40px;
 }
 
 .category-description {
@@ -52,6 +57,7 @@ p {
 .images {
   height: 400px;
   border-radius: 3px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .container {

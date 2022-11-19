@@ -1,7 +1,6 @@
 @media (max-width: 920px) {
   h3 {
     font-size: 72px !important;
-    width: 600px !important;
   }
 
   .about-link {
@@ -16,13 +15,11 @@
 }
 
 @media (max-width: 750px) {
-  h1 {
-    text-align: center !important;
+  .welcome {
     font-size: 20px !important;
   }
 
   h3 {
-    text-align: center !important;
     font-size: 40px !important;
     padding-left: 0 !important;
     width: 100% !important;
@@ -54,11 +51,12 @@ body {
   text-align: center;
 }
 
-h1 {
-  text-align: left;
+.welcome {
+  text-align: center;
   font-family: "Playfair Display";
   font-size: 20px;
   margin: 0 auto;
+  color: #000;
 }
 
 h3 {
@@ -67,11 +65,10 @@ h3 {
   padding-bottom: 20px;
   padding-left: 38px;
   font-family: "Playfair Display";
-  text-align: left;
+  text-align: center;
   background-color: rgb(51, 74, 82, 0.8);
   color: #c1895d;
-  width: 700px;
-  border-radius: 1px;
+  width: 100%;
 }
 
 .divide {
@@ -88,17 +85,29 @@ h3 {
 }
 
 .explore-link {
-  padding: 80px;
+  padding: 60px;
   background-color: rgb(150, 175, 184, 0.5);
   font-size: 32px;
   text-transform: capitalize;
   font-family: "Work Sans";
+  transition: ease-out 800ms;
+  border-radius: 2px;
+}
+
+.explore-link:hover {
+  font-size: 36px;
 }
 
 .about-link {
-  padding: 80px;
+  padding: 60px;
   background-color: rgb(150, 175, 184, 0.5);
   font-size: 32px;
   text-transform: capitalize;
   font-family: "Work Sans";
+  transition: ease-out 800ms;
+  border-radius: 2px;
+}
+
+.about-link:hover {
+  font-size: 36px;
 }
