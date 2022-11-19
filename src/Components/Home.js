@@ -35,18 +35,18 @@ export function Home() {
 
   console.log(poseName);
 
-  useEffect(() => {
-    async function getVideo() {
-        const res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${poseName}&maxResults=1&key=${KEY}`)
-        .then((res) => {
-                setVideo(res.data.items[0].id.videoId)             
-        })
-        .catch((error) => {
-            console.error(error)
-        })           
-    }
-    getVideo()
-}, [poseName]);
+//   useEffect(() => {
+//     async function getVideo() {
+//         const res = await axios.get(`https://www.googleapis.com/youtube/v3/search?part=snippet&q=how+to+do+${poseName}&maxResults=1&key=${KEY}`)
+//         .then((res) => {
+//                 setVideo(res.data.items[0].id.videoId)             
+//         })
+//         .catch((error) => {
+//             console.error(error)
+//         })           
+//     }
+//     getVideo()
+// }, [poseName]);
 
   return (
     <div style={{ backgroundImage: `url(${background})` }}>

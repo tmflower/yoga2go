@@ -11,12 +11,13 @@ export function Pose({ sanskritName, englishName, diagram, video }) {
             <em>{sanskritName}</em>
           </div>{" "}
           commonly referred to as{" "}
-          <div className="pose-name">{englishName} Pose</div>
+          <div className="pose-info">{englishName} Pose</div>
         </p>{" "}
         <img src={diagram} alt="Yoga pose example" className="pose-icon"></img>
         <div>
-          <iframe width="500" 
-                    height="280"
+          <iframe   className="pose-video"
+                    width="500" 
+                    height="300"
                     title="demonstration of pose" 
                     src={`https://www.youtube.com/embed/${video}`} 
                     frameBorder="0" 
