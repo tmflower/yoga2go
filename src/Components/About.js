@@ -13,6 +13,7 @@ export function About() {
             <Dev name="Sarah Allen"/> <Dev bio="Aspiring Network or DevOps Engineer; currently a full-time student studying Network Technologies. I have a background in WordPress site development and management as well as strong marketing skills. I enjoy being challenged and am always looking for opportunities to grow. "/>
             <Dev name="Tina Flower"/> <Dev bio="lorem"/>
             <Dev name="Valentina Provida"/> <Dev bio="Passionate cyber security analyst and computer digital forensic specialist with practical, hands-on experience. Skilled in risk/vulnerability management, networking protocols, IT regulatory compliance, incident response, business continuity, and disaster recovery planning. Yoga brings balance in my life!"/>
+
         </div>
     )
 }
