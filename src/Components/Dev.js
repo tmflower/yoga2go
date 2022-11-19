@@ -7,12 +7,16 @@ export function Dev({
     photo, 
     link, }) {
     return (
-        <div>
-            <a href={link} target="_blank"><button>Connect with Me!</button> </a> 
+        <div className="bio-profile">
+            
             <div>
-                <p>{name}</p>
-                <img src={photo} width="200"></img>               
-                <p>{bio}</p>
+                <img src={photo} width="200"></img>  
+                
+                <p className="bio-name">{name}</p>
+                             
+                <p className="bio-text">{bio}</p>
+
+                <a href={link} target="_blank"><button className="connect-btn">Connect with Me!</button> </a> 
             </div>                     
         </div>
     )

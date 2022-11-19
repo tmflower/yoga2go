@@ -1,0 +1,14 @@
+h1 {
+    font-family: "Playfair Display";
+    font-size: 64px;
+    text-align: center;
+    margin:auto;
+    color:#334A52;
+}
+
+.bio-container {
+    display:flex;
+    flex-flow:row wrap;
+    width:75%;
+    margin:auto;
+}
