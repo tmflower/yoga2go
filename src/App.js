@@ -13,7 +13,7 @@ function App() {
     <div className="App">
       <Navbar />
         <Routes>
-          <Route path="/" element={<Home />}></Route>
+          <Route path="/yoga2go" element={<Home />}></Route>
           <Route path="/explore" element={<CategoriesList />}></Route>
           <Route path="categories/:category_name" element={<CategoryDetails />}></Route>
           <Route path="/poses/:pose_id" element={<PoseDetails />}></Route>
