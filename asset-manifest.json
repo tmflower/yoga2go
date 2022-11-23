@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/yoga2go/static/css/main.c1dbd8e8.css",
-    "main.js": "/yoga2go/static/js/main.67448162.js",
+    "main.js": "/yoga2go/static/js/main.ddbfd7dc.js",
     "static/js/787.6025429c.chunk.js": "/yoga2go/static/js/787.6025429c.chunk.js",
     "static/media/defaultForBio.jpg": "/yoga2go/static/media/defaultForBio.08478c51613ff7c508f1.jpg",
     "static/media/background.png": "/yoga2go/static/media/background.710ca1877c070361451a.png",
@@ -14,11 +14,11 @@
     "static/media/Elizabethpic.jpeg": "/yoga2go/static/media/Elizabethpic.34e38252dee506b27da1.jpeg",
     "index.html": "/yoga2go/index.html",
     "main.c1dbd8e8.css.map": "/yoga2go/static/css/main.c1dbd8e8.css.map",
-    "main.67448162.js.map": "/yoga2go/static/js/main.67448162.js.map",
+    "main.ddbfd7dc.js.map": "/yoga2go/static/js/main.ddbfd7dc.js.map",
     "787.6025429c.chunk.js.map": "/yoga2go/static/js/787.6025429c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c1dbd8e8.css",
-    "static/js/main.67448162.js"
+    "static/js/main.ddbfd7dc.js"
   ]
 }
