@@ -2,16 +2,14 @@
 
 *"Be where you are, not where you think you should be."*
 
-### A wellness app designed to encourage daily yoga practice by providing users new (and familiar) poses to try, including video demonstrations.
+### A wellness app designed to encourage daily yoga practice by providing users new (and familiar) poses to try, including video demonstrations. Designed and built from scratch over 3 days for the [Girl Develop It Hackathon for Health 2022](https://girldevelopit.com/virtual-hackathon/).
 
 **Built using:**
 - React.js
 - CSS / Bootstrap
 - [Lightening Yoga API](https://lightning-yoga-api.herokuapp.com/)
-- [YouTube API](https://developers.google.com/youtube/v3)
 - Figma
 - Adobe XD
-
 
 **Contributors:**
 - Khalina Boyce
@@ -22,9 +20,6 @@
 - Kris Jackson
 - Kate Baker
 - Valentina Provida
-
-
-
 
 **Aspects we're proud of:**
 Our team exceeded expectations in regard to overcoming challenges. Many of the individuals on this project had not worked in a team environment using GitHub before. Most were new to coding, some had just the basic skills of HTML and CSS and quite a few were rusty (or had never programmed before) in the React.js language. There was no lack of enthusiasm for giving it a try. 
