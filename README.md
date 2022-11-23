@@ -4,6 +4,8 @@
 
 ### A wellness app designed to encourage daily yoga practice by providing users new (and familiar) poses to try, including video demonstrations. Designed and built from scratch over 3 days for the [Girl Develop It Hackathon for Health 2022](https://girldevelopit.com/virtual-hackathon/).
 
+[Visit Live Site](https://tmflower.github.io/yoga2go)
+
 **Built using:**
 - React.js
 - CSS / Bootstrap
