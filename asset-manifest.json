@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/yoga2go/static/css/main.c1dbd8e8.css",
+    "main.js": "/yoga2go/static/js/main.67448162.js",
+    "static/js/787.6025429c.chunk.js": "/yoga2go/static/js/787.6025429c.chunk.js",
+    "static/media/defaultForBio.jpg": "/yoga2go/static/media/defaultForBio.08478c51613ff7c508f1.jpg",
+    "static/media/background.png": "/yoga2go/static/media/background.710ca1877c070361451a.png",
+    "static/media/Heatherpic.jpeg": "/yoga2go/static/media/Heatherpic.b264a9de7b3b58a95bf6.jpeg",
+    "static/media/katepic.jpeg": "/yoga2go/static/media/katepic.7e175b0ceb095889eac3.jpeg",
+    "static/media/Tinapic.jpg": "/yoga2go/static/media/Tinapic.707eb99cab8a11f1d619.jpg",
+    "static/media/sarahpic.jpeg": "/yoga2go/static/media/sarahpic.e0ecb894f9971df4b654.jpeg",
+    "static/media/backbendedit.jpg": "/yoga2go/static/media/backbendedit.47a5fc09a27576164bbd.jpg",
+    "static/media/Yoga2Go-logo.png": "/yoga2go/static/media/Yoga2Go-logo.eb51da32540b659bc967.png",
+    "static/media/Elizabethpic.jpeg": "/yoga2go/static/media/Elizabethpic.34e38252dee506b27da1.jpeg",
+    "index.html": "/yoga2go/index.html",
+    "main.c1dbd8e8.css.map": "/yoga2go/static/css/main.c1dbd8e8.css.map",
+    "main.67448162.js.map": "/yoga2go/static/js/main.67448162.js.map",
+    "787.6025429c.chunk.js.map": "/yoga2go/static/js/787.6025429c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.c1dbd8e8.css",
+    "static/js/main.67448162.js"
+  ]
+}
