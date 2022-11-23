@@ -29,7 +29,7 @@ export function CategoryDetails({name, description}) {
             <h1>{name}</h1>
             <p>{description}</p>
             <Category name={category_name}/>
-            {posesByCategory.map((pose) => <NavLink to={`/poses/${pose.id}`} key={pose.id}><p>{pose.sanskrit_name}</p></NavLink>)}
+            {posesByCategory.map((pose) => <NavLink to={`/poses/${pose.id}`} key={pose.id}><p style={{fontSize: "24px"}}>{pose.sanskrit_name}</p></NavLink>)}
         </>
     )
 }
